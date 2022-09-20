@@ -1,0 +1,40 @@
+POST
+http://localhost:8080/api/products
+@Content-Type: application/json
+@Accept: application/json
+{
+    "name": "Mac Book Pro 15",
+    "prices": 3000000,
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15"
+}
+%%%
+# Duration: 32 ms
+# POST
+# http://localhost:8080/api/products
+# Headers
+# @Accept: application/json
+# @Content-Type: application/json
+# Body
+# {
+#     "name": "Mac Book Pro 15",
+#     "prices": 3000000,
+#     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15"
+# }
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Tue, 20 Sep 2022 22:59:38 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [117]
+{
+  "id": 10,
+  "name": "Mac Book Pro 15",
+  "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+  "prices": 3000000.0
+}

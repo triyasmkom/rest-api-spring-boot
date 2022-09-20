@@ -1,0 +1,80 @@
+GET
+http://localhost:8080/api/products
+%%%
+# Duration: 217 ms
+# GET
+# http://localhost:8080/api/products
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Tue, 20 Sep 2022 22:59:48 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [1137]
+[
+  {
+    "id": 1,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": null
+  },
+  {
+    "id": 2,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": null
+  },
+  {
+    "id": 3,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": null
+  },
+  {
+    "id": 4,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": null
+  },
+  {
+    "id": 5,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": null
+  },
+  {
+    "id": 6,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": null
+  },
+  {
+    "id": 7,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": null
+  },
+  {
+    "id": 8,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3000000.0
+  },
+  {
+    "id": 9,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3000000.0
+  },
+  {
+    "id": 10,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3000000.0
+  }
+]
