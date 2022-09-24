@@ -1,6 +1,7 @@
 package com.ths.restapi.controller;
 
 import com.ths.restapi.dto.ResponseData;
+import com.ths.restapi.dto.SearchData;
 import com.ths.restapi.dto.SupplierData;
 import com.ths.restapi.entity.Product;
 import com.ths.restapi.entity.Supplier;
@@ -13,6 +14,8 @@ import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import javax.websocket.server.PathParam;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
@@ -84,5 +87,25 @@ public class ProductController {
     @PostMapping("/{id}")
     public void addSupplier(@RequestBody Supplier supplier, @PathVariable("id") Long productId){
         productService.addSupplier(supplier, productId);
+    }
+
+    @PostMapping("/search/name")
+    public Product getProductByName(@RequestBody SearchData searchData){
+        return productService.findProductByName(searchData.getSearchKey());
+    }
+
+    @PostMapping("/search/name_like")
+    public List<Product> getProductByNameLike(@RequestBody SearchData searchData){
+        return productService.findProductByNameLike(searchData.getSearchKey());
+    }
+
+    @GetMapping("/search/category/{categoryId}")
+    public List<Product> getProductByCategory(@PathVariable("categoryId") Long categoryId){
+        return productService.findProductByCategory(categoryId);
+    }
+
+    @GetMapping("/search/supplier/{supplierId}")
+    public List<Product> getProductBySupplier(@PathVariable("supplierId") Long supplierId){
+        return productService.findProductBySupplier(supplierId);
     }
 }
