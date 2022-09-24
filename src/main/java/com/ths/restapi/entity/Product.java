@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
+import java.util.Set;
 
 @Entity
 @Table(name = "tbl_product")
@@ -24,4 +25,16 @@ public class Product implements Serializable {
     private String description;
 
     private Double prices;
+
+    @ManyToOne
+    private Category category;
+
+    @ManyToMany
+    @JoinTable(
+            name = "tbl_product_suplier",
+            joinColumns = @JoinColumn(name = "product_id"),
+            inverseJoinColumns = @JoinColumn(name = "supplier_id")
+    )
+    private Set<Supplier> suppliers;
+
 }
