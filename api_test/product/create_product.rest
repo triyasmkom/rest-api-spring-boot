@@ -8,7 +8,7 @@ http://localhost:8080/api/products
     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15"
 }
 %%%
-# Duration: 32 ms
+# Duration: 47 ms
 # POST
 # http://localhost:8080/api/products
 # Headers
@@ -26,15 +26,21 @@ http://localhost:8080/api/products
 
 @Content-Type: application/json
 @Transfer-Encoding: chunked
-@Date: Tue, 20 Sep 2022 22:59:38 GMT
+@Date: Sat, 24 Sep 2022 02:28:28 GMT
 @Keep-Alive: timeout=60
 @Connection: keep-alive
 
 
-# length: [117]
+# length: [164]
 {
-  "id": 10,
-  "name": "Mac Book Pro 15",
-  "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-  "prices": 3000000.0
+  "status": true,
+  "message": [
+    "Sukses"
+  ],
+  "payload": {
+    "id": 12,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3000000.0
+  }
 }

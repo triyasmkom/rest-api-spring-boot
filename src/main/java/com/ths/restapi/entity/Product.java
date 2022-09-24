@@ -3,6 +3,7 @@ package com.ths.restapi.entity;
 import lombok.Data;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 
 @Entity
@@ -15,8 +16,10 @@ public class Product implements Serializable {
     private Long id;
 
     @Column(name = "product_name", length = 100)
+    @NotEmpty(message = "Name is required")
     private String name;
 
+    @NotEmpty(message = "Description is required")
     @Column(name = "product_description", length = 500)
     private String description;
 
