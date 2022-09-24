@@ -1,0 +1,37 @@
+GET
+http://localhost:8080/api/categories
+
+%%%
+# Duration: 328 ms
+# GET
+# http://localhost:8080/api/categories
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Sat, 24 Sep 2022 11:42:01 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [117]
+[
+  {
+    "id": 1,
+    "name": "Category 4"
+  },
+  {
+    "id": 2,
+    "name": "Category 3"
+  },
+  {
+    "id": 3,
+    "name": "Category 2"
+  },
+  {
+    "id": 4,
+    "name": "Category 1"
+  }
+]

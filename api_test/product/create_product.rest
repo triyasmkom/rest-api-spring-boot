@@ -5,10 +5,14 @@ http://localhost:8080/api/products
 {
     "name": "Mac Book Pro 15",
     "prices": 3000000,
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15"
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "category": {
+        "id": 1,
+        "name": "Category 3"
+    }
 }
 %%%
-# Duration: 47 ms
+# Duration: 716 ms
 # POST
 # http://localhost:8080/api/products
 # Headers
@@ -18,7 +22,11 @@ http://localhost:8080/api/products
 # {
 #     "name": "Mac Book Pro 15",
 #     "prices": 3000000,
-#     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15"
+#     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+#     "category": {
+#         "id": 1,
+#         "name": "Category 3"
+#     }
 # }
 
 
@@ -26,21 +34,26 @@ http://localhost:8080/api/products
 
 @Content-Type: application/json
 @Transfer-Encoding: chunked
-@Date: Sat, 24 Sep 2022 02:28:28 GMT
+@Date: Sat, 24 Sep 2022 14:02:33 GMT
 @Keep-Alive: timeout=60
 @Connection: keep-alive
 
 
-# length: [164]
+# length: [221]
 {
   "status": true,
   "message": [
     "Sukses"
   ],
   "payload": {
-    "id": 12,
+    "id": 16,
     "name": "Mac Book Pro 15",
     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0
+    "prices": 3000000.0,
+    "category": {
+      "id": 1,
+      "name": "Category 3"
+    },
+    "suppliers": null
   }
 }

@@ -1,6 +1,7 @@
 package com.ths.restapi.service;
 
 import com.ths.restapi.entity.Product;
+import com.ths.restapi.entity.Supplier;
 import com.ths.restapi.repo.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,5 +40,14 @@ public class ProductService {
 
     public List<Product> findByName(String name){
         return productRepository.findByNameContains(name);
+    }
+
+    public void addSupplier(Supplier supplier, Long productId){
+        Product product = findOne(productId);
+        if (product==null){
+            throw new RuntimeException("Product with Id: "+productId+" not found");
+        }
+        product.getSuppliers().add(supplier);
+        save(product);
     }
 }

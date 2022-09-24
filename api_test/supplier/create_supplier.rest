@@ -1,0 +1,47 @@
+POST
+http://localhost:8080/api/suppliers
+@Content-Type: application/json
+@Accept: application/json
+{
+    "name": "maju mapan",
+    "email": "majumapan2@gmail.com",
+    "address": "yogyakarta"
+}
+%%%
+# Duration: 28 ms
+# POST
+# http://localhost:8080/api/suppliers
+# Headers
+# @Accept: application/json
+# @Content-Type: application/json
+# Body
+# {
+#     "name": "maju mapan",
+#     "email": "majumapan2@gmail.com",
+#     "address": "yogyakarta"
+# }
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Sat, 24 Sep 2022 13:09:09 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [145]
+{
+  "status": true,
+  "message": [
+    "Sukses"
+  ],
+  "payload": {
+    "id": 3,
+    "name": "maju mapan",
+    "address": "yogyakarta",
+    "email": "majumapan2@gmail.com",
+    "products": null
+  }
+}

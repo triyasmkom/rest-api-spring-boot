@@ -1,0 +1,45 @@
+GET
+http://localhost:8080/api/suppliers/3
+%%%
+# Duration: 437 ms
+# GET
+# http://localhost:8080/api/suppliers/3
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Sat, 24 Sep 2022 14:24:30 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [345]
+{
+  "id": 3,
+  "name": "maju mapan",
+  "address": "yogyakarta",
+  "email": "majumapan2@gmail.com",
+  "products": [
+    {
+      "id": 2,
+      "name": "Mac Book Pro 15",
+      "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+      "prices": 3.453242341E9,
+      "category": null,
+      "suppliers": [
+        3,
+        {
+          "id": 1,
+          "name": "maju mapan",
+          "address": "yogyakarta",
+          "email": "majumapan@gmail.com",
+          "products": [
+            2
+          ]
+        }
+      ]
+    }
+  ]
+}

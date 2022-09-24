@@ -1,0 +1,34 @@
+GET
+http://localhost:8080/api/suppliers
+%%%
+# Duration: 57 ms
+# GET
+# http://localhost:8080/api/suppliers
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Sat, 24 Sep 2022 13:09:25 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [194]
+[
+  {
+    "id": 1,
+    "name": "maju mapan",
+    "address": "yogyakarta",
+    "email": "majumapan@gmail.com",
+    "products": []
+  },
+  {
+    "id": 3,
+    "name": "maju mapan",
+    "address": "yogyakarta",
+    "email": "majumapan2@gmail.com",
+    "products": []
+  }
+]

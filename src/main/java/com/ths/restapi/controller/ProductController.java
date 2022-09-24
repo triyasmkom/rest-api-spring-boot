@@ -1,7 +1,9 @@
 package com.ths.restapi.controller;
 
 import com.ths.restapi.dto.ResponseData;
+import com.ths.restapi.dto.SupplierData;
 import com.ths.restapi.entity.Product;
+import com.ths.restapi.entity.Supplier;
 import com.ths.restapi.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -79,5 +81,8 @@ public class ProductController {
         productService.removeOne(id);
     }
 
-
+    @PostMapping("/{id}")
+    public void addSupplier(@RequestBody Supplier supplier, @PathVariable("id") Long productId){
+        productService.addSupplier(supplier, productId);
+    }
 }
