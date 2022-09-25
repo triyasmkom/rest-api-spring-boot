@@ -1,0 +1,65 @@
+POST
+http://localhost:8080/api/users/register
+@Content-Type: application/json
+@Accept: application/json
+{
+    "fullname": "Triyas Hevianto Saputro",
+    "email": "triyasvian@gmail.com",
+    "password": "secret",
+    "appUserRole": "USER_ROLE"
+}
+%%%
+# Duration: 2430 ms
+# POST
+# http://localhost:8080/api/users/register
+# Headers
+# @Accept: application/json
+# @Content-Type: application/json
+# Body
+# {
+#     "fullname": "Triyas Hevianto Saputro",
+#     "email": "triyasvian@gmail.com",
+#     "password": "secret",
+#     "appUserRole": "USER_ROLE"
+# }
+
+
+# status 200
+
+@X-Content-Type-Options: nosniff
+@X-XSS-Protection: 1; mode=block
+@Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+@Pragma: no-cache
+@Expires: 0
+@X-Frame-Options: DENY
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Sun, 25 Sep 2022 16:22:01 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [400]
+{
+  "status": true,
+  "message": [
+    "App User Save!"
+  ],
+  "payload": {
+    "id": 1,
+    "fullname": "Triyas Hevianto Saputro",
+    "email": "triyasvian@gmail.com",
+    "password": "$2a$10$RAPY5GdkKxEXG.oIpFKuKeIhTQjUJWeaPDJ6iddN1nM/fQXv1QHtC",
+    "appUserRole": "USER_ROLE",
+    "enabled": true,
+    "username": "triyasvian@gmail.com",
+    "authorities": [
+      {
+        "authority": "USER_ROLE"
+      }
+    ],
+    "accountNonExpired": true,
+    "accountNonLocked": true,
+    "credentialsNonExpired": true
+  }
+}
