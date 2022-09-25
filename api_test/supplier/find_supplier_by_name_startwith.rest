@@ -1,0 +1,63 @@
+POST
+http://localhost:8080/api/suppliers/search/bynamestartwith
+@Content-Type: application/json
+@Accept: application/json
+{
+    "searchKey": "ma"
+}
+%%%
+# Duration: 1014 ms
+# POST
+# http://localhost:8080/api/suppliers/search/bynamestartwith
+# Headers
+# @Accept: application/json
+# @Content-Type: application/json
+# Body
+# {
+#     "searchKey": "ma"
+# }
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Sun, 25 Sep 2022 10:23:46 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [373]
+[
+  {
+    "id": 1,
+    "name": "maju mapan",
+    "address": "yogyakarta",
+    "email": "majumapan@gmail.com",
+    "products": [
+      {
+        "id": 2,
+        "name": "Mac Book Pro 14",
+        "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+        "prices": 3.453242341E9,
+        "category": {
+          "id": 1,
+          "name": "Category 4"
+        },
+        "suppliers": [
+          {
+            "id": 3,
+            "name": "maju mapan",
+            "address": "yogyakarta",
+            "email": "majumapan2@gmail.com",
+            "products": [
+              2
+            ]
+          },
+          1
+        ]
+      }
+    ]
+  },
+  3
+]

@@ -1,0 +1,53 @@
+POST
+http://localhost:8080/api/suppliers/search/byname
+@Content-Type: application/json
+@Accept: application/json
+{
+    "searchKey": "pu"
+}
+%%%
+# Duration: 1837 ms
+# POST
+# http://localhost:8080/api/suppliers/search/byname
+# Headers
+# @Accept: application/json
+# @Content-Type: application/json
+# Body
+# {
+#     "searchKey": "pu"
+# }
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Sun, 25 Sep 2022 11:25:17 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [282]
+[
+  {
+    "id": 7,
+    "name": "suplaipul",
+    "address": "yogyakarta",
+    "email": "suplaipul@gmail.com",
+    "products": []
+  },
+  {
+    "id": 6,
+    "name": "digipul",
+    "address": "yogyakarta",
+    "email": "digipul@gmail.com",
+    "products": []
+  },
+  {
+    "id": 4,
+    "name": "pulsagram",
+    "address": "yogyakarta",
+    "email": "pulsagram@gmail.com",
+    "products": []
+  }
+]
