@@ -1,0 +1,17 @@
+GET
+http://localhost:8080/api/welcome
+%%%
+# Duration: 21 ms
+# GET
+# http://localhost:8080/api/welcome
+
+
+# status 200
+
+@Content-Type: text/plain;charset=UTF-8
+@Content-Length: 31
+@Date: Tue, 20 Sep 2022 22:49:08 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+Welcome to Spring Boot Rest Api

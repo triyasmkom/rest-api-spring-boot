@@ -1,0 +1,67 @@
+POST
+http://localhost:8080/api/categories/search/2/0
+@Content-Type: application/json
+@Accept: application/json
+{
+    "searchKey": ""
+}
+%%%
+# Duration: 299 ms
+# POST
+# http://localhost:8080/api/categories/search/2/0
+# Headers
+# @Accept: application/json
+# @Content-Type: application/json
+# Body
+# {
+#     "searchKey": ""
+# }
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Sun, 25 Sep 2022 12:31:53 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [373]
+{
+  "content": [
+    {
+      "id": 1,
+      "name": "Category 4"
+    },
+    {
+      "id": 2,
+      "name": "Category 3"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": true,
+      "sorted": false,
+      "unsorted": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 2,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalPages": 8,
+  "totalElements": 15,
+  "last": false,
+  "size": 2,
+  "number": 0,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "numberOfElements": 2,
+  "first": true,
+  "empty": false
+}

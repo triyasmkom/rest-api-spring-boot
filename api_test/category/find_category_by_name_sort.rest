@@ -1,0 +1,79 @@
+POST
+http://localhost:8080/api/categories/search/5/0/desc
+@Content-Type: application/json
+@Accept: application/json
+{
+    "searchKey": ""
+}
+%%%
+# Duration: 59 ms
+# POST
+# http://localhost:8080/api/categories/search/5/0/desc
+# Headers
+# @Accept: application/json
+# @Content-Type: application/json
+# Body
+# {
+#     "searchKey": ""
+# }
+
+
+# status 200
+
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Sun, 25 Sep 2022 12:41:47 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# length: [472]
+{
+  "content": [
+    {
+      "id": 16,
+      "name": "Category 15"
+    },
+    {
+      "id": 15,
+      "name": "Category 14"
+    },
+    {
+      "id": 14,
+      "name": "Category 13"
+    },
+    {
+      "id": 13,
+      "name": "Category 12"
+    },
+    {
+      "id": 12,
+      "name": "Category 11"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 5,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalElements": 15,
+  "totalPages": 3,
+  "last": false,
+  "size": 5,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "numberOfElements": 5,
+  "first": true,
+  "empty": false
+}

@@ -1,0 +1,19 @@
+DELETE
+http://localhost:8080/api/products/1
+%%%
+# DELETE
+# http://localhost:8080/api/products/1
+
+
+# status 200
+
+@Content-Length: 0
+@Date: Tue, 20 Sep 2022 23:13:06 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# Duration: 163 ms
+# Response is too large
+# file download complete [D:\SpringBoot\rest-api\.idea\rest-client\download\1]
+# [##################################################]

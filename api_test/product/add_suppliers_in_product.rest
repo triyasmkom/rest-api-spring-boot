@@ -1,0 +1,37 @@
+POST
+http://localhost:8080/api/products/2
+@Content-Type: application/json
+@Accept: application/json
+{
+    "id": 3,
+    "name": "jaya abadi",
+    "address": "yogyakarta",
+    "email": "jayaabadi@gmail.com"
+}
+%%%
+# POST
+# http://localhost:8080/api/products/2
+# Headers
+# @Accept: application/json
+# @Content-Type: application/json
+# Body
+# {
+#     "id": 3,
+#     "name": "jaya abadi",
+#     "address": "yogyakarta",
+#     "email": "jayaabadi@gmail.com"
+# }
+
+
+# status 200
+
+@Content-Length: 0
+@Date: Sat, 24 Sep 2022 14:11:12 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+
+# Duration: 28 ms
+# Response is too large
+# file download complete [D:\rest-api\.idea\rest-client\download\2]
+# [##################################################]
