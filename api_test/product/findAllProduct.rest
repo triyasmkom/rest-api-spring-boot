@@ -1,80 +1,188 @@
 GET
 http://localhost:8080/api/products
+@Authorization: Basic dHJpeWFzdmlhbkBnbWFpbC5jb206c2VjcmV0
+#Base64(user:password)
 %%%
-# Duration: 217 ms
+# Duration: 1057 ms
 # GET
 # http://localhost:8080/api/products
+# Headers
+# @Authorization: Basic dHJpeWFzdmlhbkBnbWFpbC5jb206c2VjcmV0
 
 
 # status 200
 
+@Set-Cookie: JSESSIONID=66BD627791E4B059FB5C03E1C084D9CE; Path=/; HttpOnly
+@X-Content-Type-Options: nosniff
+@X-XSS-Protection: 1; mode=block
+@Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+@Pragma: no-cache
+@Expires: 0
+@X-Frame-Options: DENY
 @Content-Type: application/json
 @Transfer-Encoding: chunked
-@Date: Tue, 20 Sep 2022 22:59:48 GMT
+@Date: Sun, 25 Sep 2022 16:24:46 GMT
 @Keep-Alive: timeout=60
 @Connection: keep-alive
 
 
-# length: [1137]
+# length: [2549]
 [
-  {
-    "id": 1,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null
-  },
-  {
-    "id": 2,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null
-  },
-  {
-    "id": 3,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null
-  },
-  {
-    "id": 4,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null
-  },
   {
     "id": 5,
     "name": "Mac Book Pro 15",
     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null
+    "prices": null,
+    "category": null,
+    "suppliers": []
   },
   {
     "id": 6,
     "name": "Mac Book Pro 15",
     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null
+    "prices": null,
+    "category": null,
+    "suppliers": []
   },
   {
     "id": 7,
     "name": "Mac Book Pro 15",
     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null
+    "prices": null,
+    "category": null,
+    "suppliers": []
   },
   {
     "id": 8,
     "name": "Mac Book Pro 15",
     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0
+    "prices": 3000000.0,
+    "category": null,
+    "suppliers": []
   },
   {
     "id": 9,
     "name": "Mac Book Pro 15",
     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0
+    "prices": 3000000.0,
+    "category": null,
+    "suppliers": []
   },
   {
     "id": 10,
     "name": "Mac Book Pro 15",
     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0
+    "prices": 3000000.0,
+    "category": null,
+    "suppliers": []
+  },
+  {
+    "id": 11,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3000000.0,
+    "category": null,
+    "suppliers": []
+  },
+  {
+    "id": 12,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3000000.0,
+    "category": null,
+    "suppliers": []
+  },
+  {
+    "id": 13,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3.453242341E9,
+    "category": null,
+    "suppliers": []
+  },
+  {
+    "id": 14,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3000000.0,
+    "category": {
+      "id": 1,
+      "name": "Category 4"
+    },
+    "suppliers": []
+  },
+  {
+    "id": 15,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3000000.0,
+    "category": {
+      "id": 1,
+      "name": "Category 4"
+    },
+    "suppliers": []
+  },
+  {
+    "id": 16,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3000000.0,
+    "category": {
+      "id": 1,
+      "name": "Category 4"
+    },
+    "suppliers": []
+  },
+  {
+    "id": 2,
+    "name": "Mac Book Pro 14",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": 3.453242341E9,
+    "category": {
+      "id": 1,
+      "name": "Category 4"
+    },
+    "suppliers": [
+      {
+        "id": 1,
+        "name": "maju mapan",
+        "address": "yogyakarta",
+        "email": "majumapan@gmail.com",
+        "products": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "name": "maju mapan",
+        "address": "yogyakarta",
+        "email": "majumapan2@gmail.com",
+        "products": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": null,
+    "category": {
+      "id": 3,
+      "name": "Category 2"
+    },
+    "suppliers": []
+  },
+  {
+    "id": 4,
+    "name": "Mac Book Pro 15",
+    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
+    "prices": null,
+    "category": {
+      "id": 1,
+      "name": "Category 4"
+    },
+    "suppliers": []
   }
 ]
