@@ -9,6 +9,7 @@ import javax.validation.constraints.NotEmpty;
 @Setter
 public class CategoryData {
 
+    private String id;
     @NotEmpty(message = "Name is required")
     private String name;
 }

@@ -58,7 +58,6 @@ public class CategoryController {
     }
 
     @PutMapping
-    @PostMapping
     public ResponseEntity<ResponseData<Category>> update(
             @Valid
             @RequestBody CategoryData categoryData,
@@ -75,7 +74,7 @@ public class CategoryController {
 
         Category category = modelMapper.map(categoryData, Category.class);
         responseData.setStatus(true);
-        responseData.setPayload(category);
+        responseData.setPayload(categoryService.save(category));
         return ResponseEntity.ok(responseData);
     }
 
