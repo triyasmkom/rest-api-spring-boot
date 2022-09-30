@@ -1,14 +1,15 @@
-POST
+PUT
 http://localhost:8080/api/categories
 @Authorization: Basic dHJpeWFzdmlhbkBnbWFpbC5jb206c2VjcmV0
 @Content-Type: application/json
 @Accept: application/json
 {
-    "name": "Category 35"
+    "id": 23,
+    "name": "Category uuuud"
 }
 %%%
-# Duration: 3310 ms
-# POST
+# Duration: 1663 ms
+# PUT
 # http://localhost:8080/api/categories
 # Headers
 # @Authorization: Basic dHJpeWFzdmlhbkBnbWFpbC5jb206c2VjcmV0
@@ -16,13 +17,14 @@ http://localhost:8080/api/categories
 # @Content-Type: application/json
 # Body
 # {
-#     "name": "Category 35"
+#     "id": 23,
+#     "name": "Category uuuud"
 # }
 
 
 # status 200
 
-@Set-Cookie: JSESSIONID=AC2C7BE0C6F0A41AEA3C587EB5C72189; Path=/; HttpOnly
+@Set-Cookie: JSESSIONID=F0E152C247E623990504B70DD03F27FA; Path=/; HttpOnly
 @X-Content-Type-Options: nosniff
 @X-XSS-Protection: 1; mode=block
 @Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -31,12 +33,12 @@ http://localhost:8080/api/categories
 @X-Frame-Options: DENY
 @Content-Type: application/json
 @Transfer-Encoding: chunked
-@Date: Fri, 30 Sep 2022 09:02:26 GMT
+@Date: Fri, 30 Sep 2022 09:49:41 GMT
 @Keep-Alive: timeout=60
 @Connection: keep-alive
 
 
-# length: [231]
+# length: [234]
 {
   "status": true,
   "message": [],
@@ -44,8 +46,8 @@ http://localhost:8080/api/categories
     "createdBy": "triyasvian@gmail.com",
     "createdDate": "2022-09-30T09:02:26.167+00:00",
     "updatedBy": "triyasvian@gmail.com",
-    "updatedDate": "2022-09-30T09:02:26.167+00:00",
+    "updatedDate": "2022-09-30T09:49:41.071+00:00",
     "id": 23,
-    "name": "Category 35"
+    "name": "Category uuuud"
   }
 }

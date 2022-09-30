@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Table(name = "tbl_categories")
-public class Category implements Serializable {
+public class Category extends BaseEntity<String> implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
