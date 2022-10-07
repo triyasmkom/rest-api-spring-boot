@@ -1,19 +1,29 @@
 DELETE
-http://localhost:8080/api/products/1
+http://localhost:8080/api/products/2
+@Authorization: Basic dHJpeWFzdmlhbkBnbWFpbC5jb206c2VjcmV0
 %%%
 # DELETE
-# http://localhost:8080/api/products/1
+# http://localhost:8080/api/products/2
+# Headers
+# @Authorization: Basic dHJpeWFzdmlhbkBnbWFpbC5jb206c2VjcmV0
 
 
 # status 200
 
+@Set-Cookie: JSESSIONID=4C619A79B0A3A82134B32E4CB57D3690; Path=/; HttpOnly
+@X-Content-Type-Options: nosniff
+@X-XSS-Protection: 1; mode=block
+@Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+@Pragma: no-cache
+@Expires: 0
+@X-Frame-Options: DENY
 @Content-Length: 0
-@Date: Tue, 20 Sep 2022 23:13:06 GMT
+@Date: Fri, 07 Oct 2022 09:21:14 GMT
 @Keep-Alive: timeout=60
 @Connection: keep-alive
 
 
-# Duration: 163 ms
+# Duration: 1060 ms
 # Response is too large
-# file download complete [D:\SpringBoot\rest-api\.idea\rest-client\download\1]
+# file download complete [D:\rest-api\.idea\rest-client\download\2]
 # [##################################################]

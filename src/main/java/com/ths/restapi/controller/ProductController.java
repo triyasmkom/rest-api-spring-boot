@@ -49,8 +49,8 @@ public class ProductController {
     }
 
     @GetMapping
-    public Iterable<Product> findAll(){
-        return productService.findAll();
+    public Iterable<Product> findAll(@RequestParam(value = "isDeleted", required = false, defaultValue = "false") boolean isDeleted){
+        return productService.findAll(isDeleted);
     }
 
     @GetMapping("/{id}")
