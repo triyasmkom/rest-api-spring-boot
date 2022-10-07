@@ -1,18 +1,18 @@
 GET
-http://localhost:8080/api/products
+http://localhost:8080/api/products?isDeleted=true
 @Authorization: Basic dHJpeWFzdmlhbkBnbWFpbC5jb206c2VjcmV0
 #Base64(user:password)
 %%%
-# Duration: 500 ms
+# Duration: 459 ms
 # GET
-# http://localhost:8080/api/products
+# http://localhost:8080/api/products?isDeleted=true
 # Headers
 # @Authorization: Basic dHJpeWFzdmlhbkBnbWFpbC5jb206c2VjcmV0
 
 
 # status 200
 
-@Set-Cookie: JSESSIONID=A9852D272ED227F5122EB7EC9DE399D5; Path=/; HttpOnly
+@Set-Cookie: JSESSIONID=B3C5F0629BB2240672DE88BD75DE61ED; Path=/; HttpOnly
 @X-Content-Type-Options: nosniff
 @X-XSS-Protection: 1; mode=block
 @Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -21,131 +21,18 @@ http://localhost:8080/api/products
 @X-Frame-Options: DENY
 @Content-Type: application/json
 @Transfer-Encoding: chunked
-@Date: Fri, 07 Oct 2022 09:21:30 GMT
+@Date: Fri, 07 Oct 2022 09:58:36 GMT
 @Keep-Alive: timeout=60
 @Connection: keep-alive
 
 
-# length: [2763]
+# length: [264]
 [
   {
-    "id": 3,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null,
-    "category": {
-      "createdBy": null,
-      "createdDate": null,
-      "updatedBy": null,
-      "updatedDate": null,
-      "id": 3,
-      "name": "Category 2"
-    },
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 4,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null,
-    "category": {
-      "createdBy": null,
-      "createdDate": null,
-      "updatedBy": null,
-      "updatedDate": null,
-      "id": 1,
-      "name": "Category 4"
-    },
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 5,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null,
-    "category": null,
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 6,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null,
-    "category": null,
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 7,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": null,
-    "category": null,
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 8,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0,
-    "category": null,
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 9,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0,
-    "category": null,
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 10,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0,
-    "category": null,
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 11,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0,
-    "category": null,
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 12,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0,
-    "category": null,
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 13,
-    "name": "Mac Book Pro 15",
+    "id": 2,
+    "name": "Mac Book Pro 14",
     "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
     "prices": 3.453242341E9,
-    "category": null,
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 14,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0,
     "category": {
       "createdBy": null,
       "createdDate": null,
@@ -155,38 +42,6 @@ http://localhost:8080/api/products
       "name": "Category 4"
     },
     "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 15,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0,
-    "category": {
-      "createdBy": null,
-      "createdDate": null,
-      "updatedBy": null,
-      "updatedDate": null,
-      "id": 1,
-      "name": "Category 4"
-    },
-    "suppliers": [],
-    "deleted": false
-  },
-  {
-    "id": 16,
-    "name": "Mac Book Pro 15",
-    "description": "Mac Book Pro 15 Mac Book Pro 15 Mac Book Pro 15",
-    "prices": 3000000.0,
-    "category": {
-      "createdBy": null,
-      "createdDate": null,
-      "updatedBy": null,
-      "updatedDate": null,
-      "id": 1,
-      "name": "Category 4"
-    },
-    "suppliers": [],
-    "deleted": false
+    "deleted": true
   }
 ]

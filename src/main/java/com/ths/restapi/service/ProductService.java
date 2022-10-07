@@ -3,10 +3,13 @@ package com.ths.restapi.service;
 import com.ths.restapi.entity.Product;
 import com.ths.restapi.entity.Supplier;
 import com.ths.restapi.repo.ProductRepository;
+import org.hibernate.Filter;
+import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +18,8 @@ import java.util.Optional;
 @Service
 @Transactional
 public class ProductService {
+
+    @Autowired private EntityManager entityManager;
 
     @Autowired
     private ProductRepository productRepository;
@@ -33,8 +38,15 @@ public class ProductService {
         return product.get();
     }
 
-    public Iterable<Product> findAll(){
-        return productRepository.findAll();
+    public Iterable<Product> findAll(boolean isDeleted){
+        //return productRepository.findAll();
+
+        Session session = entityManager.unwrap(Session.class);
+        Filter filter = session.enableFilter("delete_product_filter");
+        filter.setParameter("isDeleted", isDeleted);
+        Iterable<Product> products = productRepository.findAll();
+        session.disableFilter("delete_product_filter");
+        return products;
     }
 
     public void removeOne(Long id){

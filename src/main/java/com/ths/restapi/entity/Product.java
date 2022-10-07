@@ -5,10 +5,11 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerator;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.Data;
-import org.hibernate.annotations.SQLDelete;
-import org.hibernate.annotations.Where;
+import org.hibernate.annotations.*;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 import java.util.Set;
@@ -21,7 +22,11 @@ import java.util.Set;
         property = "id"
 )
 @SQLDelete(sql="UPDATE tbl_product SET is_deleted=true WHERE id=?")
-@Where(clause = "is_deleted=false")
+// filter yang telah dihapus tidak ditampilkan
+//@Where(clause = "is_deleted=false")
+// custom filter
+@FilterDef(name = "delete_product_filter", parameters = @ParamDef(name = "isDeleted",type = "boolean"))
+@Filter(name = "delete_product_filter", condition = "is_deleted=:isDeleted")
 public class Product implements Serializable {
 
     @Id
